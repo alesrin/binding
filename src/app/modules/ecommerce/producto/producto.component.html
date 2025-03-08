@@ -1,0 +1,4 @@
+<p *ngIf="producto">Producto seleccionado: {{producto}}</p>
+<p *ngIf="!producto">Para poder marcar un producto como favorito primero tienes que seleccionarlo</p>
+
+<button (click)="marcarComoFavorito()" *ngIf="producto">Marcar como favorito</button>

@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+
+  --color-primary: blue;
+  --gray-color: rgb(198, 198, 198);
+  --gray-dark-color-opacity: rgba(49, 48, 48, 0.365);
+
+}

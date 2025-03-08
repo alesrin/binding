@@ -1,0 +1,9 @@
+<h4>Estos son los productos disponibles</h4>
+<ul *ngFor="let item of productos" class="selectable" (click)="producto_seleccionado = item.nombre">
+  <li>Nombre del producto:  {{ item.nombre }}</li>
+  <li>Precio del producto: {{ item.precio }}</li>
+</ul>
+
+
+
+<app-producto [producto]="producto_seleccionado" (evento_favorito)="recibirNotificacion($event)"></app-producto>
